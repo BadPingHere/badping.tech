@@ -29,5 +29,5 @@ function checkCookieOnLoad() {
   }
 }
 
-setInterval(getCookie, 1000); 
-setInterval(checkCookieOnLoad, 1000); 
+setInterval(getCookie, 100); 
+setInterval(checkCookieOnLoad, 100); 

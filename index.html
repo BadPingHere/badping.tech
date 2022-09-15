@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="/assets/css/copiedfrommat.css">
     <link rel="stylesheet" href="/assets/css/stolenfromtheinternet.css">
 </head>
-<body>
-    <div id="dark">
+<body> 
+    <div id="dark" hidden> <!--Switch for dark theme, which prollt doesnt work, but the css is likely in old github pushes-->
         <div class="topcorner" onclick="setCookie('theme', 'light', 30)">
             <label class="switch">
                 <input type="checkbox">
@@ -17,6 +17,7 @@
                     <span></span>
                 </div>
             </label>
+        </div>
         </div>
         <div class="middlediv">
             <main class="center">
@@ -54,68 +55,14 @@
                     </section>
                  </div>
             </main> 
-            <footer class="bottomcenter">
-                <p>© 2022 badpinghere</p>
-                <a href="/privacy-policy"><button class="button27" role="button" hidden>Privacy Policy</button></a>
-                <a href="mailto:support@badping.live"><button class="button27" role="button">Contact Us</button></a>
-                <a href="/sitemap/sitemap.xml"><button class="button27" role="button" hidden>Sitemap</button></a>
-            </footer>
+                <footer class="bottomcenter">
+                    <p>© 2022 badpinghere</p>
+                    <a href="/privacy-policy"><button class="button27" role="button" hidden>Privacy Policy</button></a>
+                    <a href="mailto:support@badping.live"><button class="button27" role="button">Contact Us</button></a>
+                    <a href="/sitemap/sitemap.xml"><button class="button27" role="button" hidden>Sitemap</button></a>
+                </footer>
+            </div>
         </div>
-    </div>
-    <!--Light HTML-->
-    <div id="light">
-        <div class="topcorner" onclick="setCookie('theme', 'dark', 30)">
-            <label class="switch">
-                <input type="checkbox" checked>
-                <div>
-                    <span></span>
-                </div>
-            </label>
-        </div>
-        <div class="middlediv">
-            <main class="center">
-                <div class="center">
-                    <section>
-                        <div class="container"><div class="typed-out">BadPingHere</div></div>
-                        <div class="buttons">
-                            <a href=//github.com/badpinghere>
-                                <span class=icon>
-                                    <img src="/assets/images/github.svg">
-                                </span>
-                            </a>
-                            <a>
-                                <span class=icon>
-                                    <img src="/assets/images/discord-logo-black-and-white.png" title="Ping#6175">
-                                </span>
-                            </a>
-                            <!--maybe I should make a real twitter account-->
-                            <a href=//twitter.com/ hidden>
-                                <span class=icon>
-                                    <img src="/assets/images/twitter.jpg">
-                                </span>
-                            </a>
-                        </div>
-                        <p>I primarily do web development, learning HTML and CSS as I make this page, and in my off-time I like to study cybersecurity.!</p>
-                        <div>
-                            <a href="/Projects">
-                                <button class="button27" role="button">Projects (Not Done)</button>
-                            </a>
-                            <!--Likely not coming anytime soon, as I am not in need of a crazy resume. Also the last thing i want is to post my entire life on my website right now-->
-                            <a href="/Resume">
-                                <button class="button27" role="button">Resume (Not Done)</button>
-                            </a>
-                        </div>
-                    </section>
-                 </div>
-            </main> 
-            <footer class="bottomcenter">
-                <p>© 2022 badpinghere</p>
-                <a href="/privacy-policy"><button class="button27" role="button" hidden>Privacy Policy</button></a>
-                <a href="mailto:support@badping.live"><button class="button27" role="button">Contact Us</button></a>
-                <a href="/sitemap/sitemap.xml"><button class="button27" role="button" hidden>Sitemap</button></a>
-            </footer>
-        </div>
-    </div>
-</body>
-    <script src="/assets/javascript/based"></script>
+    </body>
+    <!-- <script src="/assets/javascript/based"></script> not needed rn-->
 </html>
