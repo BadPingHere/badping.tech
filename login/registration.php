@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <meta charset="utf-8">
-<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="assets/css/reg-temp.css" />
 </head>
 <body>
 <?php
