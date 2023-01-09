@@ -1,0 +1,7 @@
+.icon {
+    height: 1em;
+    width: 1em;
+    opacity: .5;
+    transition: opacity .2s;
+    display: inline-block;
+}
