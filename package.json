@@ -1,5 +1,6 @@
 {
   "name": "badping.live",
+  "homepage": "https://badping.live",
   "version": "2.0",
   "private": true,
   "dependencies": {
