@@ -1,0 +1,27 @@
+  .card {
+    height: 100vh;
+    text-align: center;
+    display: grid;
+    align-items: center;
+  }
+  .infoholder {
+    margin: auto;
+    position: relative;
+    width: 35%;
+  }
+  .socialmedia {
+    width: 31px;
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  .images {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .title {
+    align-items: center;
+  }
+  .externalurl {
+    width: 32px;
+  }
