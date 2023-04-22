@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="http://badping.live"><img src="https://badping.live/favicon.ico" alt="badping.live" width="200"></a>
+  <a href="http://badping.live"><img src="https://badping.live/logo512.png" alt="badping.live" width="200"></a>
   <br>
   badping.live
   <br>
@@ -57,6 +57,7 @@ This is not my completed project, as there are *always* feature I want to add. H
 
 * Blog page
 * Light mode
+* Mobile Support
 
 ## Credits
 
