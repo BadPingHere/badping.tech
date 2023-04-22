@@ -27,10 +27,11 @@ const router = createBrowserRouter([
     path: "projects",
     element: < Projects />,
   },
-  {
-    path: "blog",
-    element: < Blog />,
-  },
+  // Shelved until futher notice
+  //{
+  //  path: "blog",
+  //  element: < Blog />,
+  //},
   {
     path: "*", // Finds 404's
     element: < NotFound />,

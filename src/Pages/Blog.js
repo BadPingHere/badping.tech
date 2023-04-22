@@ -37,4 +37,5 @@ function Blog() {
   )
 }
 
+// Shelving the idea of a blog for now, maybe I will create this later, however i dont think i need one (nor do i know how one should look.)
 export default Blog
