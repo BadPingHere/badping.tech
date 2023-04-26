@@ -4,7 +4,7 @@ import reportWebVitals from './reportWebVitals';
 // Import pages now. god i fucking hate this. fuck react. but more importantly fuck npm.
 import Home from './Pages/Home';
 import Contact from './Pages/Contact';
-import Blog from './Pages/Blog';
+//import Blog from './Pages/Blog';
 import Projects from './Pages/Projects';
 import NotFound from './Pages/404';
 

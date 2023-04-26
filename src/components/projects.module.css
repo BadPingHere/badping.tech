@@ -10,7 +10,7 @@
     width: 35%;
   }
   .socialmedia {
-    width: 31px;
+    width: 2.0em;
     display: inline-block;
     margin-right: 5px;
     margin-left: 5px;
@@ -23,5 +23,5 @@
     align-items: center;
   }
   .externalurl {
-    width: 32px;
+    width: 2.0em;
   }

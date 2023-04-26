@@ -16,7 +16,7 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.1em;
     text-align: center;
-    max-width: 600px;
+    max-width: 50em;
 }
 .content > p > a {
     color: #a9d1ff;
@@ -28,7 +28,7 @@
 }
 .underline {
     display: block;
-    height: 2px;
+    height: 0.1em;
     margin: 0 auto;
     width: 0;
     transition: width .25s linear;
