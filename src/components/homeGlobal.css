@@ -8,20 +8,20 @@
   /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
  /* background: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%);*/
   /* clip-path: circle(25px at calc(0% + 45px) 45px); */
-  background: #000;
-  clip-path: circle(25px at calc(100% - 45px) 45px);
+  clip-path: circle(0px at calc(100% - 45px) 45px);
   transition: all 0.3s ease-in-out;
-  z-index: 1;
+  z-index: 4;
+  background: #000;
 }
 #active:checked ~ .wrapper{
   clip-path: circle(75%);
 }
 .menu-btn{
   position: absolute;
-  z-index: 2;
-  right: 0.85em;
+  z-index: 5;
+  right: 0.25em;
   /* left: 20px; */
-  top: 0.85em;
+  /*top: 0.85em; */
   height: 2.125em;
   width: 2.125em;
   text-align: center;
@@ -33,7 +33,6 @@
   /*background: linear-gradient(-135deg, #c850c0, #4158d0);*/
   /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
  /* background: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%); */
-  background: #070707;
   transition: all 0.3s ease-in-out;
 }
 #active:checked ~ .menu-btn{

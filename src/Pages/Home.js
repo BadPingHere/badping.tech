@@ -55,7 +55,6 @@ class MyCarousel extends Component {
 
   static get CONTAINER_STYLE() {
     return {
-      position: "relative",
       height: "80vh",
       width: "80vw",
       display: "flex",
@@ -67,8 +66,8 @@ class MyCarousel extends Component {
 
   static get CARD_STYLE() {
     return {
-      height: "50em",
-      width: "50em",
+      width: "100%",
+      height: "100%",
       paddingTop: "1px",
       fontSize: "0.9em",
       borderRadius: "10px",
@@ -120,7 +119,8 @@ function Home() {
     }
   };
   return (
-    <div className={styles.site}>
+    <div id="page">
+      <div id="top">
       <HamburgerMenu isHome={true} />
       <div className={styles.title}>
         <Typewriter options={{
@@ -134,23 +134,24 @@ function Home() {
         }}
         />
         </div>
-      <div className={styles.content}>
-        <h2>
-          I'm a <span>16</span> year old developer
-        </h2>
-        <h2>
-          proficient in <span className={styles['lang-button']} style={{color:"#ffdd48"}} data-panel="Python" onClick={() => handleSpanClick('python')}>Python<span className={styles.underline} style={{backgroundColor:"#ffdd48"}}></span></span>
-          , <span className={styles['lang-button']} style={{color:"#474A8A"}} data-panel="PHP" onClick={() => handleSpanClick('php')}>PHP<span className={styles.underline} style={{backgroundColor:"#474A8A"}}></span></span>
-          , <span className={styles['lang-button']} style={{color:"#f16529"}} data-panel="JS" onClick={() => handleSpanClick('javascript')}>Javascript<span className={styles.underline} style={{backgroundColor:"#f16529"}}></span></span>, and more.
-        </h2>
-        <div id="images">
-          <a className={styles.socialmedia} href="https://github.com/BadPingHere" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/github/white" alt="Github Logo"></img></a>
-          <a className={styles.socialmedia} href="https://discord.com/users/736028271153512489" target="_blank"rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/discord/white" alt="Github Logo"></img></a>
-        </div>
-        <div className={`${styles.fade} ${['python', 'php', 'javascript'].includes(currentDiv) ? styles.fadein : ''}`}>
-          <MyCarouselWrapper contentType={currentDiv} />
-        </div>
       </div>
+        <div id="content" className={styles.content}>
+          <h2>
+            I'm a <span>16</span> year old developer
+          </h2>
+          <h2>
+            proficient in <span className={styles['lang-button']} style={{color:"#ffdd48"}} data-panel="Python" onClick={() => handleSpanClick('python')}>Python<span className={styles.underline} style={{backgroundColor:"#ffdd48"}}></span></span>
+            , <span className={styles['lang-button']} style={{color:"#474A8A"}} data-panel="PHP" onClick={() => handleSpanClick('php')}>PHP<span className={styles.underline} style={{backgroundColor:"#474A8A"}}></span></span>
+            , <span className={styles['lang-button']} style={{color:"#f16529"}} data-panel="JS" onClick={() => handleSpanClick('javascript')}>Javascript<span className={styles.underline} style={{backgroundColor:"#f16529"}}></span></span>, and more.
+          </h2>
+          <div id="images">
+            <a className={styles.socialmedia} href="https://github.com/BadPingHere" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/github/white" alt="Github Logo"></img></a>
+            <a className={styles.socialmedia} href="https://discord.com/users/736028271153512489" target="_blank"rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/discord/white" alt="Github Logo"></img></a>
+          </div>
+          <div className={`${styles.fade} ${['python', 'php', 'javascript'].includes(currentDiv) ? styles.fadein : ''}`}>
+            <MyCarouselWrapper contentType={currentDiv} />
+          </div>
+        </div>
     </div>
   );
 }
