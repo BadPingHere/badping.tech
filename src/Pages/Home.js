@@ -6,7 +6,11 @@ import '../components/homeGlobal.css';
 import HamburgerMenu from '../components/HamburgerMenu';
 import Typewriter from "typewriter-effect";
 import React, { useState, useEffect, Component } from 'react';
-import ReactCardCarousel from "react-card-carousel";
+
+import Flicking from "@egjs/react-flicking";
+import { AutoPlay } from "@egjs/flicking-plugins";
+import "@egjs/flicking-plugins/dist/pagination.css";
+
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { atomOneDark, tomorrowNight, gruvboxDark, atelierForestDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
@@ -17,50 +21,41 @@ class MyCarousel extends Component {
     const { content3 } = this.props;
     const { content4 } = this.props;
     const { contentLang } = this.props;
+    const plugins = [
+      new AutoPlay({ duration: 10000, direction: "NEXT", stopOnHover: true }),
+    ];
     return (
-      <div style={MyCarousel.CONTAINER_STYLE}>
-        <ReactCardCarousel autoplay={false} autoplay_speed={5000} disable_box_shadow spread="narrow">
-          <div style={MyCarousel.CARD_STYLE}>
-            <div className={styles.code}>
-              <SyntaxHighlighter language={contentLang} style={atomOneDark} showLineNumbers wrapLines>
-                {content1}
-              </SyntaxHighlighter>
-            </div>
-          </div>
-          <div style={MyCarousel.CARD_STYLE}>
-            <div className={styles.code}>
-              <SyntaxHighlighter language={contentLang} style={tomorrowNight} showLineNumbers wrapLines>
-                {content2}
-              </SyntaxHighlighter>
-            </div>
-          </div>
-          <div style={MyCarousel.CARD_STYLE}>
-            <div className={styles.code}>
-              <SyntaxHighlighter language={contentLang} style={gruvboxDark} showLineNumbers wrapLines>
-                {content3}
-              </SyntaxHighlighter>
-            </div>
-          </div>
-          <div style={MyCarousel.CARD_STYLE}>
-            <div className={styles.code}>
-              <SyntaxHighlighter language={contentLang} style={atelierForestDark} showLineNumbers wrapLines>
-                {content4}
-              </SyntaxHighlighter>
-            </div>
-          </div>
-        </ReactCardCarousel>
-      </div>
+    <Flicking circular={true} renderOnlyVisible={true} plugins={plugins}>
+        <div className={styles.code}>
+          <SyntaxHighlighter language={contentLang} style={atomOneDark} showLineNumbers wrapLines>
+            {content1}
+          </SyntaxHighlighter>
+        </div>
+        <div className={styles.code}>
+          <SyntaxHighlighter language={contentLang} style={tomorrowNight} showLineNumbers wrapLines>
+            {content2}
+          </SyntaxHighlighter>
+        </div>
+        <div className={styles.code}>
+          <SyntaxHighlighter language={contentLang} style={gruvboxDark} showLineNumbers wrapLines>
+            {content3}
+          </SyntaxHighlighter>
+        </div>
+        <div className={styles.code}>
+          <SyntaxHighlighter language={contentLang} style={atelierForestDark} showLineNumbers wrapLines>
+            {content4}
+          </SyntaxHighlighter>
+        </div>
+      </Flicking>
     );
   }
 
   static get CONTAINER_STYLE() {
     return {
-      height: "80vh",
-      width: "80vw",
-      display: "flex",
-      flex: 1,
+      //height: "80vh",
+      //width: "80vw",
       justifyContent: "center",
-      alignItems: "middle"
+      alignItems: "middle",
     };
   }
 
@@ -69,9 +64,9 @@ class MyCarousel extends Component {
       width: "100%",
       height: "100%",
       paddingTop: "1px",
-      fontSize: "0.9em",
+      fontSize: "1.1vh",
       borderRadius: "10px",
-      boxSizing: "border-box"
+      boxSizing: "border-box",
     };
   }
 }
@@ -119,10 +114,10 @@ function Home() {
     }
   };
   return (
-    <div id="page">
-      <div id="top">
+    <div className={styles.page} id="page">
+      <div id="header" className={styles.header}>
       <HamburgerMenu isHome={true} />
-      <div className={styles.title}>
+      <div id="header" className={styles.title}>
         <Typewriter options={{
         autoStart: true,
         delay: 'natural'
@@ -133,21 +128,19 @@ function Home() {
         .start();
         }}
         />
+      </div>
+        <h2>I'm a <span>16</span> year old developer</h2>
+        <h2>
+          proficient in <span className={styles['lang-button']} style={{color:"#ffdd48"}} data-panel="Python" onClick={() => handleSpanClick('python')}>Python<span className={styles.underline} style={{backgroundColor:"#ffdd48"}}></span></span>
+          , <span className={styles['lang-button']} style={{color:"#474A8A"}} data-panel="PHP" onClick={() => handleSpanClick('php')}>PHP<span className={styles.underline} style={{backgroundColor:"#474A8A"}}></span></span>
+          , <span className={styles['lang-button']} style={{color:"#f16529"}} data-panel="JS" onClick={() => handleSpanClick('javascript')}>Javascript<span className={styles.underline} style={{backgroundColor:"#f16529"}}></span></span>, and more.
+        </h2>
+        <div id="images">
+          <a className={styles.socialmedia} href="https://github.com/BadPingHere" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/github/white" alt="Github Logo"></img></a>
+          <a className={styles.socialmedia} href="https://discord.com/users/736028271153512489" target="_blank"rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/discord/white" alt="Github Logo"></img></a>
         </div>
       </div>
         <div id="content" className={styles.content}>
-          <h2>
-            I'm a <span>16</span> year old developer
-          </h2>
-          <h2>
-            proficient in <span className={styles['lang-button']} style={{color:"#ffdd48"}} data-panel="Python" onClick={() => handleSpanClick('python')}>Python<span className={styles.underline} style={{backgroundColor:"#ffdd48"}}></span></span>
-            , <span className={styles['lang-button']} style={{color:"#474A8A"}} data-panel="PHP" onClick={() => handleSpanClick('php')}>PHP<span className={styles.underline} style={{backgroundColor:"#474A8A"}}></span></span>
-            , <span className={styles['lang-button']} style={{color:"#f16529"}} data-panel="JS" onClick={() => handleSpanClick('javascript')}>Javascript<span className={styles.underline} style={{backgroundColor:"#f16529"}}></span></span>, and more.
-          </h2>
-          <div id="images">
-            <a className={styles.socialmedia} href="https://github.com/BadPingHere" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/github/white" alt="Github Logo"></img></a>
-            <a className={styles.socialmedia} href="https://discord.com/users/736028271153512489" target="_blank"rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/discord/white" alt="Github Logo"></img></a>
-          </div>
           <div className={`${styles.fade} ${['python', 'php', 'javascript'].includes(currentDiv) ? styles.fadein : ''}`}>
             <MyCarouselWrapper contentType={currentDiv} />
           </div>

@@ -24,6 +24,7 @@ This is my *current* dream website, so I baked in many cool features:
 * Codeboxes, to display some of my code. Uses Highlight.js and React SyntaxHighlighter.
 * Typewriter, one of my favorite typewriter's I've used.
 * Cute little hamburger menu, with a nice animation.
+* Responsive display, supports desktop, mobile, and tablets.
 
 ## How To Use
 
@@ -57,7 +58,6 @@ This is not my completed project, as there are *always* feature I want to add. H
 
 * Blog page
 * Light mode
-* Mobile Support
 
 ## Credits
 
@@ -68,6 +68,7 @@ This software uses some of the following open source packages:
 - [Hamburger Menu](https://codepen.io/yuhomyan/pen/ExKvNVa)
 - Icons are taken from [here](https://simpleicons.org/)
 - [highlight.js](https://highlightjs.org/)
+- [Flicking](https://github.com/naver/egjs-flicking)
 
 ## License
 
