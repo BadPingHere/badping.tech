@@ -50,7 +50,7 @@ $ npm start
 
 ## Download
 
-You can [download](https://github.com/badpinghere/badping.live/releases/tag/v2.0) the latest installable version of Markdownify for Windows, macOS and Linux.
+You can [download](https://github.com/BadPingHere/badping.live/releases/latest) the latest installable version of badping.live for Windows, macOS and Linux.
 
 ## To-Do
 
