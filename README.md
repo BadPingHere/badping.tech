@@ -16,7 +16,7 @@
   <a href="#license">License</a>
 </p>
 
-![screenshot](https://cdn.upload.systems/uploads/iPprMx4T.gif)
+![screenshot](https://cdn.upload.systems/uploads/xh8YKWKP.gif)
 
 ## Features
 This is my *current* dream website, so I baked in many cool features:
