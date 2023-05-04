@@ -20,40 +20,33 @@ import {
   atomOneLight,
   qtcreatorLight,
 } from "react-syntax-highlighter/dist/esm/styles/hljs";
-import { useColorModeValue } from "@chakra-ui/react";
 
-function DarkMode({ ifWhite, ifBlack }) {
-  const src = useColorModeValue(ifWhite, ifBlack);
-  return src;
+function useDarkMode() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+  useEffect(() => {
+    const mediaQueryList = window.matchMedia("(prefers-color-scheme: dark)");
+    setIsDarkMode(mediaQueryList.matches);
+    const listener = (event) => {
+      setIsDarkMode(event.matches);
+    };
+    mediaQueryList.addEventListener("change", listener);
+    return () => mediaQueryList.removeEventListener("change", listener);
+  }, []);
+  return isDarkMode;
 }
 
 const MyCarousel = (props) => {
+  const isDarkMode = useDarkMode();
   const { content1, content2, content3, content4, contentLang } = props;
   const plugins = [
     new AutoPlay({ duration: 10000, direction: "NEXT", stopOnHover: true }),
   ];
-  var style1 = DarkMode({
-    ifWhite: a11yLight,
-    ifBlack: atomOneDark,
-  });
-  var style2 = DarkMode({
-    ifWhite: isblEditorLight,
-    ifBlack: tomorrowNight,
-  });
-  var style3 = DarkMode({
-    ifWhite: atomOneLight,
-    ifBlack: gruvboxDark,
-  });
-  var style4 = DarkMode({
-    ifWhite: qtcreatorLight,
-    ifBlack: atelierForestDark,
-  });
   return (
     <Flicking circular={true} renderOnlyVisible={true} plugins={plugins}>
       <div className={styles.code}>
         <SyntaxHighlighter
           language={contentLang}
-          style={style1}
+          style={isDarkMode ? atomOneDark : a11yLight}
           showLineNumbers
           wrapLines
         >
@@ -63,7 +56,7 @@ const MyCarousel = (props) => {
       <div className={styles.code}>
         <SyntaxHighlighter
           language={contentLang}
-          style={style2}
+          style={isDarkMode ? tomorrowNight : isblEditorLight}
           showLineNumbers
           wrapLines
         >
@@ -73,7 +66,7 @@ const MyCarousel = (props) => {
       <div className={styles.code}>
         <SyntaxHighlighter
           language={contentLang}
-          style={style3}
+          style={isDarkMode ? gruvboxDark : atomOneLight}
           showLineNumbers
           wrapLines
         >
@@ -83,7 +76,7 @@ const MyCarousel = (props) => {
       <div className={styles.code}>
         <SyntaxHighlighter
           language={contentLang}
-          style={style4}
+          style={isDarkMode ? atelierForestDark : qtcreatorLight}
           showLineNumbers
           wrapLines
         >
@@ -141,6 +134,7 @@ function MyCarouselWrapper({ contentType }) {
   );
 }
 function Home() {
+  const isDarkMode = useDarkMode();
   const [currentDiv, setCurrentDiv] = useState(null);
   // Handle what Span is clicked, and what div's to show
   const handleSpanClick = (div) => {
@@ -218,10 +212,11 @@ function Home() {
             rel="noopener noreferrer"
           >
             <img
-              src={DarkMode({
-                ifWhite: "https://cdn.simpleicons.org/github/black",
-                ifBlack: "https://cdn.simpleicons.org/github/white",
-              })}
+              src={
+                isDarkMode
+                  ? "https://cdn.simpleicons.org/github/white"
+                  : "https://cdn.simpleicons.org/github/black"
+              }
               alt="Github Logo"
             ></img>
           </a>
@@ -232,10 +227,11 @@ function Home() {
             rel="noopener noreferrer"
           >
             <img
-              src={DarkMode({
-                ifWhite: "https://cdn.simpleicons.org/discord/black",
-                ifBlack: "https://cdn.simpleicons.org/discord/white",
-              })}
+              src={
+                isDarkMode
+                  ? "https://cdn.simpleicons.org/discord/white"
+                  : "https://cdn.simpleicons.org/discord/black"
+              }
               alt="Github Logo"
             ></img>
           </a>

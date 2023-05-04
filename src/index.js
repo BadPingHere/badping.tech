@@ -1,14 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 // Import pages now. god i fucking hate this. fuck react. but more importantly fuck npm.
 import Home from "./Pages/Home";
 import Contact from "./Pages/Contact";
 //import Blog from './Pages/Blog';
 import Projects from "./Pages/Projects";
 import NotFound from "./Pages/404";
-
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
   {

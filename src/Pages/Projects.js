@@ -3,16 +3,24 @@ import styles from "../components/projects.module.css";
 // Global CSS
 import "../components/projectsGlobal.css";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import HamburgerMenu from "../components/HamburgerMenu";
 import ReactFullpage from "@fullpage/react-fullpage";
 import externalWhite from "../external_link.png";
 import externalBlack from "../external_link_black.png";
-import { useColorModeValue } from "@chakra-ui/react";
 
-function DarkMode({ ifWhite, ifBlack }) {
-  const src = useColorModeValue(ifWhite, ifBlack);
-  return src;
+function useDarkMode() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+  useEffect(() => {
+    const mediaQueryList = window.matchMedia("(prefers-color-scheme: dark)");
+    setIsDarkMode(mediaQueryList.matches);
+    const listener = (event) => {
+      setIsDarkMode(event.matches);
+    };
+    mediaQueryList.addEventListener("change", listener);
+    return () => mediaQueryList.removeEventListener("change", listener);
+  }, []);
+  return isDarkMode;
 }
 
 function DisplayProject({
@@ -22,14 +30,11 @@ function DisplayProject({
   githubLink,
   externalLink,
 }) {
-  const gitSrc = DarkMode({
-    ifWhite: "https://cdn.simpleicons.org/github/black",
-    ifBlack: "https://cdn.simpleicons.org/github/white",
-  });
-  const extSrc = DarkMode({
-    ifWhite: externalBlack,
-    ifBlack: externalWhite,
-  });
+  const isDarkMode = useDarkMode();
+  const gitSrc = isDarkMode
+    ? "https://cdn.simpleicons.org/github/white"
+    : "https://cdn.simpleicons.org/github/black";
+  const extSrc = isDarkMode ? externalWhite : externalBlack;
   return (
     <div className={styles.card}>
       <div className={styles.infoholder}>
