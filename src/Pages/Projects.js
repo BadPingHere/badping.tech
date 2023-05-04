@@ -1,23 +1,27 @@
 // Local CSS
-import styles from '../components/projects.module.css';
-// Global CSS 
-import '../components/projectsGlobal.css';
+import styles from "../components/projects.module.css";
+// Global CSS
+import "../components/projectsGlobal.css";
 
-import React from 'react'
-import HamburgerMenu from '../components/HamburgerMenu';
-import ReactFullpage from '@fullpage/react-fullpage';
-import external from '../external_link.png'
+import React from "react";
+import HamburgerMenu from "../components/HamburgerMenu";
+import ReactFullpage from "@fullpage/react-fullpage";
+import external from "../external_link.png";
 
-function displayProject(projectName, languages, projectDetails, githubLink, externalLink) {
+function displayProject(
+  projectName,
+  languages,
+  projectDetails,
+  githubLink,
+  externalLink
+) {
   return (
     <div className={styles.card}>
       <div className={styles.infoholder}>
         <h2 className={styles.title}>{projectName}</h2>
         <div className={styles.images}>
-          {languages.map(language => (
-            <div
-              className={styles.socialmedia}
-            >
+          {languages.map((language) => (
+            <div className={styles.socialmedia}>
               <img
                 src={`https://cdn.simpleicons.org/${language}`}
                 alt={`${language} Logo`}
@@ -60,63 +64,53 @@ function displayProject(projectName, languages, projectDetails, githubLink, exte
 const Fullpage = () => (
   <ReactFullpage
     //fullpage options
-    loopTop = {true}
-    loopBottom = {true}
+    loopTop={true}
+    loopBottom={true}
     navigation
     render={() => {
       return (
         <ReactFullpage.Wrapper>
           <div className="section">
-          {
-            displayProject(
-            "badping.live", // Project Name
-            ["javascript", "css3"], // Languages
-            "The entire code for the site you're on, badping.live. Made with my personal worst framework, react.", // Project Details
-            "https://github.com/BadPingHere/badping.live", // Github Link
-            "https://badping.live" // External Link (Optional)
-            )
-          }
+            {displayProject(
+              "badping.live", // Project Name
+              ["javascript", "css3"], // Languages
+              "The entire code for the site you're on, badping.live. Made with my personal worst framework, react.", // Project Details
+              "https://github.com/BadPingHere/badping.live", // Github Link
+              "https://badping.live" // External Link (Optional)
+            )}
           </div>
           <div className="section">
-          {
-            displayProject( 
-            "talk.badping.live", // Project Name
-            ["php", "css3", "javascript"], // Languages
-            "A shoutbox application, with a nice ol' stolen login page. Used to be my biggest project, now look at me.", // Project Details
-            "https://github.com/BadPingHere/talk.badping.live", // Github Link
-            "https://talk.badping.live" // External Link (Optional)
-            )
-          }
+            {displayProject(
+              "talk.badping.live", // Project Name
+              ["php", "css3", "javascript"], // Languages
+              "A shoutbox application, with a nice ol' stolen login page. Used to be my biggest project, now look at me.", // Project Details
+              "https://github.com/BadPingHere/talk.badping.live", // Github Link
+              "https://talk.badping.live" // External Link (Optional)
+            )}
           </div>
           <div className="section">
-          {
-            displayProject(
-            "Trusted", // Project Name
-            ["python", "php", "css3"], // Languages
-            "A easy-to-use Scraper and Web UI for the game Untrusted. This took a long time, and I'm really happy with the result.", // Project Details
-            "https://github.com/BadPingHere/Trusted" // Github Link
-            )
-          }
+            {displayProject(
+              "Trusted", // Project Name
+              ["python", "php", "css3"], // Languages
+              "A easy-to-use Scraper and Web UI for the game Untrusted. This took a long time, and I'm really happy with the result.", // Project Details
+              "https://github.com/BadPingHere/Trusted" // Github Link
+            )}
           </div>
           <div className="section">
-          {
-            displayProject(
-            "Youtube Downloader", // Project Name
-            ["python"], // Languages
-            "A python youtube downloader, allowing for downloads of to 1440p, and with options to include audio and thumbnails, which oddly a lot of project's do not.", // Project Details
-            "https://github.com/BadPingHere/Youtube-DL", // Github Link
-            )
-          }
+            {displayProject(
+              "Youtube Downloader", // Project Name
+              ["python"], // Languages
+              "A python youtube downloader, allowing for downloads of to 1440p, and with options to include audio and thumbnails, which oddly a lot of project's do not.", // Project Details
+              "https://github.com/BadPingHere/Youtube-DL" // Github Link
+            )}
           </div>
           <div className="section">
-          {
-            displayProject(
-            "Startup", // Project Name
-            ["python"], // Languages
-            "A startup python script I personally use every time I launch my computer. It has it's quirks, but it works well for me.", // Project Details
-            "https://github.com/BadPingHere/startup", // Github Link
-            )
-          }
+            {displayProject(
+              "Startup", // Project Name
+              ["python"], // Languages
+              "A startup python script I personally use every time I launch my computer. It has it's quirks, but it works well for me.", // Project Details
+              "https://github.com/BadPingHere/startup" // Github Link
+            )}
           </div>
         </ReactFullpage.Wrapper>
       );
@@ -141,7 +135,7 @@ function Projects() {
       </style>
       <Fullpage />
     </div>
-  )
+  );
 }
 
-export default Projects
+export default Projects;

@@ -19,12 +19,14 @@
 ![screenshot](https://cdn.upload.systems/uploads/xh8YKWKP.gif)
 
 ## Features
-This is my *current* dream website, so I baked in many cool features:
 
-* Codeboxes, to display some of my code. Uses Highlight.js and React SyntaxHighlighter.
-* Typewriter, one of my favorite typewriter's I've used.
-* Cute little hamburger menu, with a nice animation.
-* Responsive display, supports desktop, mobile, and tablets.
+This is my _current_ dream website, so I baked in many cool features:
+
+- Codeboxes, to display some of my code. Uses Highlight.js and React SyntaxHighlighter.
+- Typewriter, one of my favorite typewriter's I've used.
+- Cute little hamburger menu, with a nice animation.
+- Responsive display, supports desktop, mobile, and tablets.
+- Light and dark mode, based on current browser color schemes and themes.
 
 ## How To Use
 
@@ -47,17 +49,15 @@ $ npm start
 > **Note**
 > If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
 
-
 ## Download
 
 You can [download](https://github.com/BadPingHere/badping.live/releases/latest) the latest installable version of badping.live for Windows, macOS and Linux.
 
 ## To-Do
 
-This is not my completed project, as there are *always* feature I want to add. Here are my todo features:
+This is not my completed project, as there are _always_ feature I want to add. Here are my todo features:
 
-* Blog page
-* Light mode
+- Blog page
 
 ## Credits
 
@@ -72,7 +72,7 @@ This software uses some of the following open source packages:
 
 ## License
 
-GPLv3 
+GPLv3
 
 ---
 

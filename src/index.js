@@ -1,31 +1,27 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import reportWebVitals from "./reportWebVitals";
 // Import pages now. god i fucking hate this. fuck react. but more importantly fuck npm.
-import Home from './Pages/Home';
-import Contact from './Pages/Contact';
+import Home from "./Pages/Home";
+import Contact from "./Pages/Contact";
 //import Blog from './Pages/Blog';
-import Projects from './Pages/Projects';
-import NotFound from './Pages/404';
+import Projects from "./Pages/Projects";
+import NotFound from "./Pages/404";
 
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
     path: "",
-    element: < Home />,
+    element: <Home />,
   },
   {
     path: "contact",
-    element: < Contact />,
+    element: <Contact />,
   },
   {
-    
     path: "projects",
-    element: < Projects />,
+    element: <Projects />,
   },
   // Shelved until futher notice
   //{
@@ -34,11 +30,11 @@ const router = createBrowserRouter([
   //},
   {
     path: "*", // Finds 404's
-    element: < NotFound />,
+    element: <NotFound />,
   },
 ]);
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <RouterProvider router={router} />

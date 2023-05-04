@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const HamburgerMenu = ({ isHome }) => {
   return (
@@ -9,10 +9,18 @@ const HamburgerMenu = ({ isHome }) => {
       </label>
       <div className="wrapper">
         <ul>
-          <li><a href="/contact">Contact</a></li>
-          <li><a href="/projects">Projects</a></li>
+          <li>
+            <a href="/contact">Contact</a>
+          </li>
+          <li>
+            <a href="/projects">Projects</a>
+          </li>
           {/*     <li><a href="/blog">Blog</a></li>      */}
-          {!isHome && <li><a href="/">Back to home</a></li>}
+          {!isHome && (
+            <li>
+              <a href="/">Back to home</a>
+            </li>
+          )}
         </ul>
       </div>
     </>
