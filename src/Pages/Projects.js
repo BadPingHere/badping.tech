@@ -6,15 +6,30 @@ import "../components/projectsGlobal.css";
 import React from "react";
 import HamburgerMenu from "../components/HamburgerMenu";
 import ReactFullpage from "@fullpage/react-fullpage";
-import external from "../external_link.png";
+import externalWhite from "../external_link.png";
+import externalBlack from "../external_link_black.png";
+import { useColorModeValue } from "@chakra-ui/react";
 
-function displayProject(
+function DarkMode({ ifWhite, ifBlack }) {
+  const src = useColorModeValue(ifWhite, ifBlack);
+  return src;
+}
+
+function DisplayProject({
   projectName,
   languages,
   projectDetails,
   githubLink,
-  externalLink
-) {
+  externalLink,
+}) {
+  const gitSrc = DarkMode({
+    ifWhite: "https://cdn.simpleicons.org/github/black",
+    ifBlack: "https://cdn.simpleicons.org/github/white",
+  });
+  const extSrc = DarkMode({
+    ifWhite: externalBlack,
+    ifBlack: externalWhite,
+  });
   return (
     <div className={styles.card}>
       <div className={styles.infoholder}>
@@ -37,10 +52,7 @@ function displayProject(
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              src="https://cdn.simpleicons.org/github/white"
-              alt="Github Logo"
-            ></img>
+            <img src={gitSrc} alt="Github Logo"></img>
           </a>
           {externalLink && (
             <a
@@ -51,7 +63,7 @@ function displayProject(
             >
               <img
                 className={styles.externalurl}
-                src={external}
+                src={extSrc}
                 alt="External Link Logo"
               ></img>
             </a>
@@ -61,56 +73,57 @@ function displayProject(
     </div>
   );
 }
+
 const Fullpage = () => (
   <ReactFullpage
     //fullpage options
     loopTop={true}
     loopBottom={true}
     navigation
-    render={() => {
+    render={({ state, fullpageApi }) => {
       return (
         <ReactFullpage.Wrapper>
           <div className="section">
-            {displayProject(
-              "badping.live", // Project Name
-              ["javascript", "css3"], // Languages
-              "The entire code for the site you're on, badping.live. Made with my personal worst framework, react.", // Project Details
-              "https://github.com/BadPingHere/badping.live", // Github Link
-              "https://badping.live" // External Link (Optional)
-            )}
+            <DisplayProject
+              projectName="badping.live" // Project Name
+              languages={["javascript", "css3"]} // Languages
+              projectDetails="The entire code for the site you're on, badping.live. Made with my personal worst framework, react." // Project Details
+              githubLink="https://github.com/BadPingHere/badping.live" // Github Link
+              externalLink="https://badping.live" // External Link (Optional)
+            />
           </div>
           <div className="section">
-            {displayProject(
-              "talk.badping.live", // Project Name
-              ["php", "css3", "javascript"], // Languages
-              "A shoutbox application, with a nice ol' stolen login page. Used to be my biggest project, now look at me.", // Project Details
-              "https://github.com/BadPingHere/talk.badping.live", // Github Link
-              "https://talk.badping.live" // External Link (Optional)
-            )}
+            <DisplayProject
+              projectName="talk.badping.live" // Project Name
+              languages={["php", "css3", "javascript"]} // Languages
+              projectDetails="A shoutbox application, with a nice ol' stolen login page. Used to be my biggest project, now look at me." // Project Details
+              githubLink="https://github.com/BadPingHere/talk.badping.live" // Github Link
+              externalLink="https://talk.badping.live" // External Link (Optional)
+            />
           </div>
           <div className="section">
-            {displayProject(
-              "Trusted", // Project Name
-              ["python", "php", "css3"], // Languages
-              "A easy-to-use Scraper and Web UI for the game Untrusted. This took a long time, and I'm really happy with the result.", // Project Details
-              "https://github.com/BadPingHere/Trusted" // Github Link
-            )}
+            <DisplayProject
+              projectName="Trusted" // Project Name
+              languages={["python", "php", "css3"]} // Languages
+              projectDetails="A easy-to-use Scraper and Web UI for the game Untrusted. This took a long time, and I'm really happy with the result." // Project Details
+              githubLink="https://github.com/BadPingHere/Trusted" // Github Link
+            />
           </div>
           <div className="section">
-            {displayProject(
-              "Youtube Downloader", // Project Name
-              ["python"], // Languages
-              "A python youtube downloader, allowing for downloads of to 1440p, and with options to include audio and thumbnails, which oddly a lot of project's do not.", // Project Details
-              "https://github.com/BadPingHere/Youtube-DL" // Github Link
-            )}
+            <DisplayProject
+              projectName="Youtube Downloader" // Project Name
+              languages={["python"]} // Languages
+              projectDetails="A python youtube downloader, allowing for downloads of to 1440p, and with options to include audio and thumbnails, which oddly a lot of project's do not." // Project Details
+              githubLink="https://github.com/BadPingHere/Youtube-DL" // Github Link
+            />
           </div>
           <div className="section">
-            {displayProject(
-              "Startup", // Project Name
-              ["python"], // Languages
-              "A startup python script I personally use every time I launch my computer. It has it's quirks, but it works well for me.", // Project Details
-              "https://github.com/BadPingHere/startup" // Github Link
-            )}
+            <DisplayProject
+              projectName="Startup" // Project Name
+              languages={["python"]} // Languages
+              projectDetails="A startup python script I personally use every time I launch my computer. It has it's quirks, but it works well for me." // Project Details
+              githubLink="https://github.com/BadPingHere/startup" // Github Link
+            />
           </div>
         </ReactFullpage.Wrapper>
       );

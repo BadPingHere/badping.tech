@@ -12,7 +12,7 @@
     clip-path: circle(0px at calc(100% - 45px) 45px);
     transition: all 0.3s ease-in-out;
     z-index: 4;
-    background: #ebebeb;
+    background: #ffffff;
   }
   #active:checked ~ .wrapper {
     clip-path: circle(75%);
@@ -38,7 +38,7 @@
   }
   #active:checked ~ .menu-btn {
     color: #000000;
-    background: #ebebeb;
+    background: #ffffff;
   }
   #active:checked ~ .menu-btn i:before {
     content: "\f00d";
@@ -71,7 +71,7 @@
     padding: 5px 30px;
     color: #000000;
     border-radius: 50px;
-    background: #ebebeb;
+    background: #ffffff;
     position: relative;
     line-height: 2.125em;
     transition: all 0.3s ease;
