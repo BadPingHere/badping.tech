@@ -5,7 +5,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 // Import pages now. god i fucking hate this. fuck react. but more importantly fuck npm.
 import Home from "./Pages/Home";
 import Contact from "./Pages/Contact";
-//import Blog from './Pages/Blog';
+import Blog from "./Pages/Blog";
+import Firstpost from "./Pages/blog/is-ai-good-for-society";
 import Projects from "./Pages/Projects";
 import NotFound from "./Pages/404";
 
@@ -22,11 +23,14 @@ const router = createBrowserRouter([
     path: "projects",
     element: <Projects />,
   },
-  // Shelved until futher notice
-  //{
-  //  path: "blog",
-  //  element: < Blog />,
-  //},
+  {
+    path: "blog",
+    element: <Blog />,
+  },
+  {
+    path: "blog/is-ai-good-for-society",
+    element: <Firstpost />,
+  },
   {
     path: "*", // Finds 404's
     element: <NotFound />,

@@ -166,14 +166,14 @@ function Home() {
           proficient in{" "}
           <span
             className={styles["lang-button"]}
-            style={{ color: "#ffdd48" }}
+            style={{ color: "#f1c400" }}
             data-panel="Python"
             onClick={() => handleSpanClick("python")}
           >
             Python
             <span
               className={styles.underline}
-              style={{ backgroundColor: "#ffdd48" }}
+              style={{ backgroundColor: "#f1c400" }}
             ></span>
           </span>
           ,{" "}

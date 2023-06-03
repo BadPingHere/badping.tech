@@ -1,4 +1,5 @@
 import React from "react";
+import "../components/fontawesome.css";
 
 const HamburgerMenu = ({ isHome }) => {
   return (
@@ -10,15 +11,25 @@ const HamburgerMenu = ({ isHome }) => {
       <div className="wrapper">
         <ul>
           <li>
-            <a href="/contact">Contact</a>
+            <a style={{ boxShadow: "none" }} href="/contact">
+              Contact
+            </a>
           </li>
           <li>
-            <a href="/projects">Projects</a>
+            <a style={{ boxShadow: "none" }} href="/projects">
+              Projects
+            </a>
           </li>
-          {/*     <li><a href="/blog">Blog</a></li>      */}
+          <li>
+            <a style={{ boxShadow: "none" }} href="/blog">
+              Blog
+            </a>
+          </li>
           {!isHome && (
             <li>
-              <a href="/">Back to home</a>
+              <a style={{ boxShadow: "none" }} href="/">
+                Back to home
+              </a>
             </li>
           )}
         </ul>
