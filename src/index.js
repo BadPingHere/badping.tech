@@ -6,9 +6,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Pages/Home";
 import Contact from "./Pages/Contact";
 import Blog from "./Pages/Blog";
-import Firstpost from "./Pages/blog/is-ai-good-for-society";
 import Projects from "./Pages/Projects";
 import NotFound from "./Pages/404";
+import Isigoodforsociety from "./Pages/blog/is-ai-good-for-society";
 
 const router = createBrowserRouter([
   {
@@ -29,7 +29,7 @@ const router = createBrowserRouter([
   },
   {
     path: "blog/is-ai-good-for-society",
-    element: <Firstpost />,
+    element: <Isigoodforsociety />,
   },
   {
     path: "*", // Finds 404's

@@ -22,6 +22,7 @@
 
 This is my _current_ dream website, so I baked in many cool features:
 
+- A blog, based on my current favorite designed blog, [overreacted](https://overreacted.io/).
 - Codeboxes, to display some of my code. Uses Highlight.js and React SyntaxHighlighter.
 - Typewriter, one of my favorite typewriter's I've used.
 - Cute little hamburger menu, with a nice animation.
@@ -57,7 +58,7 @@ You can [download](https://github.com/BadPingHere/badping.live/releases/latest) 
 
 This is not my completed project, as there are _always_ feature I want to add. Here are my todo features:
 
-- Blog page
+- Themes for Blog
 
 ## Credits
 
