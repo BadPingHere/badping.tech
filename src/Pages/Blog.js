@@ -98,6 +98,17 @@ function Blog() {
                 </header>
                 <p>Spoiler alert: it's not.</p>
               </article>
+              <article>
+                <header>
+                  <h3 className={styles.articleTitle}>
+                    <a style={{ boxShadow: "none" }} href="/blog/trust">
+                      Trust
+                    </a>
+                  </h3>
+                  <small>July 31, 2023{/* */} • 4 min read</small>
+                </header>
+                <p>Are you sure you can trust your computer?</p>
+              </article>
             </main>
           </div>
         </div>

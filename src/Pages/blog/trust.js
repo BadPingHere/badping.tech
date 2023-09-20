@@ -8,7 +8,7 @@ import "../../fonts/fonts-shared.css";
 import HamburgerMenu from "../../components/HamburgerMenu";
 import ReactMarkdown from "react-markdown";
 import React, { useState, useEffect } from "react";
-import README from "../blog/is-ai-good-for-society.md";
+import README from "../blog/trust.md";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { a11yDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import remarkGfm from "remark-gfm";
@@ -133,11 +133,9 @@ function Blog() {
             <main>
               <article>
                 <header>
-                  <h1 className={styles.articleName}>
-                    Is AI good for society?
-                  </h1>
+                  <h1 className={styles.articleName}>Trust</h1>
                   <p className={styles.articleDate}>
-                    June 3, 2023 • 4 min read
+                    July 31, 2023 • 4 min read
                   </p>
                 </header>
                 <div id="blogpost">

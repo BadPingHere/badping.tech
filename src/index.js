@@ -9,6 +9,7 @@ import Blog from "./Pages/Blog";
 import Projects from "./Pages/Projects";
 import NotFound from "./Pages/404";
 import Isigoodforsociety from "./Pages/blog/is-ai-good-for-society";
+import Trust from "./Pages/blog/trust";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
   {
     path: "blog/is-ai-good-for-society",
     element: <Isigoodforsociety />,
+  },
+  {
+    path: "blog/trust",
+    element: <Trust />,
   },
   {
     path: "*", // Finds 404's

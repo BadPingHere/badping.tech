@@ -145,7 +145,6 @@
   .header > h2 {
     text-align: center;
     margin: 0;
-    cursor: default;
   }
   .content {
     font-family: "Inconsolata", monospace;
