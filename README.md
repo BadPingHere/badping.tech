@@ -1,8 +1,8 @@
 <h1 align="center">
   <br>
-  <a href="http://badping.live"><img src="https://badping.live/logo512.png" alt="badping.live" width="200"></a>
+  <a href="https://badping.tech/"><img src="https://badping.tech/logo512.png" alt="badping.tech" width="200"></a>
   <br>
-  badping.live
+  badping.tech
   <br>
 </h1>
 
@@ -35,10 +35,10 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/badpinghere/badping.live
+$ git clone https://github.com/badpinghere/badping.tech
 
 # Go into the repository
-$ cd badping.live
+$ cd badping.tech
 
 # Install dependencies
 $ npm install
@@ -52,7 +52,7 @@ $ npm start
 
 ## Download
 
-You can [download](https://github.com/BadPingHere/badping.live/releases/latest) the latest installable version of badping.live for Windows, macOS and Linux.
+You can [download](https://github.com/BadPingHere/badping.tech/releases/latest) the latest installable version of badping.tech for Windows, macOS and Linux.
 
 ## To-Do
 

@@ -35,7 +35,7 @@ function contact() {
             </a>
             , which I am most active on, or my email which i look at
             bi-weekly~ish,{" "}
-            <a href="mailto:general@badping.live">general@badping.live</a>.
+            <a href="mailto:general@badping.tech">general@badping.tech</a>.
           </p>
         </div>
       </div>

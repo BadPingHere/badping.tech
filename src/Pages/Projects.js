@@ -24,6 +24,7 @@ function useDarkMode() {
 }
 
 function DisplayProject({
+  projectID,
   projectName,
   languages,
   projectDetails,
@@ -36,7 +37,7 @@ function DisplayProject({
     : "https://cdn.simpleicons.org/github/black";
   const extSrc = isDarkMode ? externalWhite : externalBlack;
   return (
-    <div className={styles.card}>
+    <div className={styles.card} key={projectID}>
       <div className={styles.infoholder}>
         <h2 className={styles.title}>{projectName}</h2>
         <div className={styles.images}>
@@ -82,6 +83,7 @@ function DisplayProject({
 const Fullpage = () => (
   <ReactFullpage
     //fullpage options
+    licenseKey="gplv3-license"
     loopTop={true}
     loopBottom={true}
     navigation
@@ -90,24 +92,27 @@ const Fullpage = () => (
         <ReactFullpage.Wrapper>
           <div className="section">
             <DisplayProject
-              projectName="badping.live" // Project Name
+              projectID="0"
+              projectName="badping.tech" // Project Name
               languages={["javascript", "css3"]} // Languages
-              projectDetails="The entire code for the site you're on, badping.live. Made with my personal worst framework, react." // Project Details
-              githubLink="https://github.com/BadPingHere/badping.live" // Github Link
-              externalLink="https://badping.live" // External Link (Optional)
+              projectDetails="The entire code for the site you're on, badping.tech. Made with my personal worst framework, react." // Project Details
+              githubLink="https://github.com/BadPingHere/badping.tech" // Github Link
+              externalLink="https://badping.tech" // External Link (Optional)
             />
           </div>
           <div className="section">
             <DisplayProject
-              projectName="talk.badping.live" // Project Name
+              projectID="1"
+              projectName="talk.badping.tech" // Project Name
               languages={["php", "css3", "javascript"]} // Languages
               projectDetails="A shoutbox application, with a nice ol' stolen login page. Used to be my biggest project, now look at me." // Project Details
-              githubLink="https://github.com/BadPingHere/talk.badping.live" // Github Link
-              externalLink="https://talk.badping.live" // External Link (Optional)
+              githubLink="https://github.com/BadPingHere/talk.badping.tech" // Github Link
+              externalLink="https://talk.badping.tech" // External Link (Optional)
             />
           </div>
           <div className="section">
             <DisplayProject
+              projectID="2"
               projectName="Trusted" // Project Name
               languages={["python", "php", "css3"]} // Languages
               projectDetails="A easy-to-use Scraper and Web UI for the game Untrusted. This took a long time, and I'm really happy with the result." // Project Details
@@ -116,6 +121,7 @@ const Fullpage = () => (
           </div>
           <div className="section">
             <DisplayProject
+              projectID="3"
               projectName="Youtube Downloader" // Project Name
               languages={["python"]} // Languages
               projectDetails="A python youtube downloader, allowing for downloads of to 1440p, and with options to include audio and thumbnails, which oddly a lot of project's do not." // Project Details
@@ -124,6 +130,7 @@ const Fullpage = () => (
           </div>
           <div className="section">
             <DisplayProject
+              projectID="4"
               projectName="Startup" // Project Name
               languages={["python"]} // Languages
               projectDetails="A startup python script I personally use every time I launch my computer. It has it's quirks, but it works well for me." // Project Details

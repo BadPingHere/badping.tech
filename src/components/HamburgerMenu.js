@@ -11,23 +11,23 @@ const HamburgerMenu = ({ isHome }) => {
       <div className="wrapper">
         <ul>
           <li>
-            <a style={{ boxShadow: "none" }} href="/contact">
+            <a style={{ boxShadow: "none" }} href="#/contact">
               Contact
             </a>
           </li>
           <li>
-            <a style={{ boxShadow: "none" }} href="/projects">
+            <a style={{ boxShadow: "none" }} href="#/projects">
               Projects
             </a>
           </li>
           <li>
-            <a style={{ boxShadow: "none" }} href="/blog">
+            <a style={{ boxShadow: "none" }} href="#/blog">
               Blog
             </a>
           </li>
           {!isHome && (
             <li>
-              <a style={{ boxShadow: "none" }} href="/">
+              <a style={{ boxShadow: "none" }} href="#/">
                 Back to home
               </a>
             </li>

@@ -21,9 +21,9 @@ Fuck, well maybe I can create my own checksum, and run it myself, that way I kno
 Okay, different method. Lets use a virus scanner. Let me just pop it into virustotal, and see what it says.
 <br><br>
 
-![alt text][image]
+![alt text][image2]
 
-[image]: https://cdn.upload.systems/uploads/jYc1xKkg.png
+[image2]: https://cdn.upload.systems/uploads/jYc1xKkg.png
 
 Well, it says it's legit, but we fall into the same rabbit hole. How do we trust the webpage, or how do we trust the file uploading? Okay, lets scan it with the Windows Defender tool. Same problem. How do know it isnt scanning a different file, that it isnt compromised? Or better yet, how do we know our operating system is even safe? Can we prove with 100% certainty that there is not already a backdoor in my computer?
 <br><br>

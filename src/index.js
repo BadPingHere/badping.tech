@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 // Import pages now. god i fucking hate this. fuck react. but more importantly fuck npm.
 import Home from "./Pages/Home";
 import Contact from "./Pages/Contact";
@@ -11,29 +11,29 @@ import NotFound from "./Pages/404";
 import Isigoodforsociety from "./Pages/blog/is-ai-good-for-society";
 import Trust from "./Pages/blog/trust";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "",
     element: <Home />,
   },
   {
-    path: "contact",
+    path: "/contact",
     element: <Contact />,
   },
   {
-    path: "projects",
+    path: "/projects",
     element: <Projects />,
   },
   {
-    path: "blog",
+    path: "/blog",
     element: <Blog />,
   },
   {
-    path: "blog/is-ai-good-for-society",
+    path: "/blog/is-ai-good-for-society",
     element: <Isigoodforsociety />,
   },
   {
-    path: "blog/trust",
+    path: "/blog/trust",
     element: <Trust />,
   },
   {
@@ -42,8 +42,7 @@ const router = createBrowserRouter([
   },
 ]);
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />
   </React.StrictMode>
