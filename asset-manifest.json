@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.bf4bcad2.css",
-    "main.js": "/static/js/main.57b79bc0.js",
+    "main.js": "/static/js/main.7622a8aa.js",
     "static/js/787.ff7080df.chunk.js": "/static/js/787.ff7080df.chunk.js",
     "static/media/fa-solid-900.woff2": "/static/media/fa-solid-900.bb975c966c37455a1bc3.woff2",
     "static/media/fa-regular-400.woff2": "/static/media/fa-regular-400.3223dc79c1adee56370b.woff2",
@@ -12,15 +12,15 @@
     "static/media/montserrat-900-l.woff2": "/static/media/montserrat-900-l.e6c80823afebb35e16f9.woff2",
     "static/media/merriweather-400-l.woff2": "/static/media/merriweather-400-l.fd4fba424d435ed86072.woff2",
     "static/media/merriweather-700-l.woff2": "/static/media/merriweather-700-l.187d45eaf13b91cf608f.woff2",
-    "static/media/is-ai-good-for-society.md": "/static/media/is-ai-good-for-society.4dba1d5a82f57d8d2648.md",
-    "static/media/trust.md": "/static/media/trust.7518a4d8ffffb37d307b.md",
+    "static/media/is-ai-good-for-society.md": "/static/media/is-ai-good-for-society.ef4722d8cadc0fcd6bf1.md",
+    "static/media/trust.md": "/static/media/trust.742c8be5d4d115f62593.md",
     "index.html": "/index.html",
     "main.bf4bcad2.css.map": "/static/css/main.bf4bcad2.css.map",
-    "main.57b79bc0.js.map": "/static/js/main.57b79bc0.js.map",
+    "main.7622a8aa.js.map": "/static/js/main.7622a8aa.js.map",
     "787.ff7080df.chunk.js.map": "/static/js/787.ff7080df.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bf4bcad2.css",
-    "static/js/main.57b79bc0.js"
+    "static/js/main.7622a8aa.js"
   ]
 }
