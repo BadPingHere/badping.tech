@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/badping.live/static/css/main.e9c30f1a.css",
-    "main.js": "/badping.live/static/js/main.674bba25.js",
+    "main.js": "/badping.live/static/js/main.e90d02be.js",
     "static/js/787.ea0e1ad8.chunk.js": "/badping.live/static/js/787.ea0e1ad8.chunk.js",
     "static/media/fa-solid-900.woff2": "/badping.live/static/media/fa-solid-900.bb975c966c37455a1bc3.woff2",
     "static/media/fa-regular-400.woff2": "/badping.live/static/media/fa-regular-400.3223dc79c1adee56370b.woff2",
@@ -16,11 +16,11 @@
     "static/media/trust.md": "/badping.live/static/media/trust.a7bda47de7ea2bf76269.md",
     "index.html": "/badping.live/index.html",
     "main.e9c30f1a.css.map": "/badping.live/static/css/main.e9c30f1a.css.map",
-    "main.674bba25.js.map": "/badping.live/static/js/main.674bba25.js.map",
+    "main.e90d02be.js.map": "/badping.live/static/js/main.e90d02be.js.map",
     "787.ea0e1ad8.chunk.js.map": "/badping.live/static/js/787.ea0e1ad8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e9c30f1a.css",
-    "static/js/main.674bba25.js"
+    "static/js/main.e90d02be.js"
   ]
 }
