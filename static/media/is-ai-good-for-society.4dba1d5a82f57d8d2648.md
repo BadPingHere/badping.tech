@@ -1,0 +1,53 @@
+If you are a programmer, or let alone have been on the internet within the last 1-2 years, you have probably seen articles with outlandish titles like:
+![alt text][image1]
+
+[image1]: https://cdn.upload.systems/uploads/gEjE0pFY.png
+
+![alt text][image2]
+
+[image2]: https://cdn.upload.systems/uploads/4c7CSrLf.png
+
+> I mean, this simply isnt possible! How could a computer take a programming job!
+
+This was me a year ago. Now, the story is much more grim.
+
+# Table Of Contents
+
+# The start
+
+Even though it felt like _AI_ and _chatbots_ came out of nowhere, as many were introduced to the idea by news articles, they were always coming. Even in [2018](https://www.nytimes.com/interactive/2018/11/14/magazine/tech-design-ai-chatbot.html), chatbots were being used in development and medical enviorments. Even much before 2018, chatbot's were used for customer service, but there was always a person ready to pick up the chatbot's slack because, simply put, AI in 2018 was **not good enough**.
+<br><br>
+
+This fact made us forget about the moral and ethical dilemma's surrounding AI. _I mean, there is no WAY AI can turn out like the matrix if they cant even tell me how to fix my wifi box!_ Maybe this is hindsight, but looking back on this line of thought now: this could not had been more wrong. In 2020, Harvard published an four-part series, with the second part called [Great promise but potential for peril](https://news.harvard.edu/gazette/story/2020/10/ethical-concerns-mount-as-ai-takes-bigger-decision-making-role/), detailing the ethical problems with AI. It touches on a few good points like the lack of goverment oversight on the groundbreaking technology, biases within the system, and major discrimination. After all, many AI's are trained based on data that can either politicaly biased, dated, or plain racist. Computers cannot tell what is right or wrong, factually or morally, because most people cannot even come to a consesus on it. But, fret not, because we _obviously_ learned from our mistakes, seen through the technology, and fixed it, right?
+<br><br>
+
+# ChatGPT
+
+Ah, ChatGPT. How it has only been over half a year since its release, yet the havoc it has unleased.
+<br><br>
+
+ChatGPT is, undoubtly, the biggest piece of AI technology **ever**. It has become mainstream within a week of launch, and has not stopped since. Even now, ChatGPT, or some of its counterparts, has been used as a lawyer for a [traffic ticket](https://jalopnik.com/donotpay-chatgpt-artificial-intelligence-traffic-court-1850025337), [creating a resume](https://www.linkedin.com/pulse/how-use-chatgpt-write-resume-nikita-gupta), and help with debgging code. However, it is also being used to [cheat on homework](https://nypost.com/2022/12/26/students-using-chatgpt-to-cheat-professor-warns/), [replace writers](https://twitter.com/JasonColavito/status/1611710986871767041), and even [write malware](https://www.infosecurity-magazine.com/news/chatgpt-creates-polymorphic-malware/). Now I know what you may be thinking
+
+> Why is OpenAI allowing people to write malware!! Do they not listen to past mistakes!
+
+Yes, OpenAI has restrictions in place. If you want it to create malware, it will probably say something like this:
+![image](https://cdn.upload.systems/uploads/OToh9WrD.png)
+
+So, if openAI has these just _unbreakable_ and **impossible** obstacles, how do people use it to write malware? Well, its a new type cyberattack: Prompt injection.
+<br><br>
+
+What is prompt injection you may ask? Well, its an attack on the AI itself. How ChatGPT, and most other LLM's (Large Language Model) work is they have 2 inputs: The System Prompt and the User Prompt. Self explanatory, but the system prompt is on every chatgpt text, and it is what OpenAI wants the chatbot to do. The User prompt is everything the user can control. The issue is, the user prompt is not isolated, due to the token method openai uses to interpret prompts, where it reads token by token, therefore the user prompt can, in some cases, override the system prompt. This has become widespread, the most popular currently being [D.A.N](https://gist.github.com/coolaj86/6f4f7b30129b0251f61fa7baaa881516). All of this to lead to this point:
+<br><br>
+
+# AI is the end of the world
+
+Maybe I am being pessimistic when I say this, but I do not believe that AI will turn out as a good advancement in 50 years time. I do not trust an AI to drive my car, to build my house, or to run my country. I wholeheartedly believe that AI will be, although not the only, a big reason for the fall of society. I think AI will
+
+- Cut more than half of the current jobs
+- Learn from the mistakes of humans
+- Launch nuclear fallout
+
+However, even if my death will be by the handgun of a robot, I still choose to use AI. Even if its prone to error, biases, and plain stupidity, I ask it coding questions, libary reccomendations, and even to cheat for me. Hell, parts of my code on this website im sure I have asked GPT-4 to help me with.
+<br><br>
+
+Today, AI is something we use to create spearphishing emails, websites, and resume's. But tomorrow, I pray we are still doing that.
