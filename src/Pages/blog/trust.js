@@ -13,7 +13,6 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { a11yDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
-import remarkToc from "remark-toc";
 import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 
@@ -124,7 +123,7 @@ function Blog() {
                     textDecoration: "none",
                     color: "rgb(170, 189, 255)",
                   }}
-                  href="/blog"
+                  href="/#/blog"
                 >
                   Blog
                 </a>
@@ -141,14 +140,14 @@ function Blog() {
                 <div id="blogpost">
                   <ReactMarkdown
                     children={content.md}
-                    remarkPlugins={[remarkGfm, remarkToc]}
+                    remarkPlugins={[remarkGfm]}
                     rehypePlugins={[
                       rehypeRaw,
                       rehypeAutolinkHeadings,
                       rehypeSlug,
                     ]}
-                    renderers={{ heading: HeadingRenderer }}
                     components={{
+                      heading: HeadingRenderer,
                       code({ node, inline, className, children, ...props }) {
                         const match = /language-(\w+)/.exec(className || "");
                         return !inline && match ? (
@@ -178,7 +177,7 @@ function Blog() {
                     textDecoration: "none",
                     color: "rgb(170, 189, 255)",
                   }}
-                  href="/blog"
+                  href="/#/blog"
                 >
                   Blog
                 </a>

@@ -1,8 +1,6 @@
 Recently, i remember watching a Tom Scott video, I can't recall the video, but it brought up a question that is something that is hard to think on, but is well documented: How do you trust the internet? How do you trust that there isnt some backdoor that can watch your every move? Well, simple answer, you cant. The long answer is much more complicated.
 <br><br>
 
-# Table Of Contents
-
 # Shifting trust
 
 To start, lets assume that there is a file, lets say ms_process.exe is backdoor. So, how do you check and confirm? Well you google it and see if other people have encounterd it.

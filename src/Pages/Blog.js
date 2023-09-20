@@ -80,7 +80,7 @@ function Blog() {
           <div className={styles.content}>
             <header className={styles.title}>
               <h1>
-                <a href="/">Blog</a>
+                <a href="/#/blog">Blog</a>
               </h1>
             </header>
             <main>

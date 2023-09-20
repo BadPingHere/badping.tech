@@ -11,8 +11,6 @@ If you are a programmer, or let alone have been on the internet within the last 
 
 This was me a year ago. Now, the story is much more grim.
 
-# Table Of Contents
-
 # The start
 
 Even though it felt like _AI_ and _chatbots_ came out of nowhere, as many were introduced to the idea by news articles, they were always coming. Even in [2018](https://www.nytimes.com/interactive/2018/11/14/magazine/tech-design-ai-chatbot.html), chatbots were being used in development and medical enviorments. Even much before 2018, chatbot's were used for customer service, but there was always a person ready to pick up the chatbot's slack because, simply put, AI in 2018 was **not good enough**.
