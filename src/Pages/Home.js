@@ -160,7 +160,7 @@ function Home() {
           />
         </div>
         <h2>
-          I'm a <span>16</span> year old developer
+          I'm a <span>17</span> year old developer
         </h2>
         <h2>
           proficient in{" "}
