@@ -1,0 +1,23 @@
+:root {
+	--color-background: #070707;
+	--color-text: #ffffff;
+	--color-cursor: #ffffff;
+	--color-menuBtn: #ffffff;
+	--color-wrapperBG: #000000;
+	--color-wrapperLinkHover: #9fccff;
+	--color-404Link: #a9d1ff;
+	--color-404LinkHover: #85beff;
+	--color-homepagePython: #f1c400;
+	--color-homepagePHP: #474a8a;
+	--color-homepageJS: #f16529;
+	--link-githubIMG: url('/images/githubWhite.svg');
+	--link-discordIMG: url('/images/discordWhite.svg');
+	--color-contactLink: #a9d1ff;
+	--color-contactLinkHover: #85beff;
+	--color-blogBG: #282c35;
+	--color-blogText: rgba(255, 255, 255, 0.88);
+	--color-blogTextTitle: #ffffff;
+	--color-blogTextLink: rgba(74, 116, 255, 0.8);
+	--color-blogTitle: #dfdfdf;
+	--link-externalIMG: url('/images/external_link_white.png');
+}

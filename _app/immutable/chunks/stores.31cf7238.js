@@ -1,0 +1,1 @@
+import{w as a}from"./index.47533b4f.js";const t=typeof localStorage<"u",e=t?localStorage.getItem("theme"):null,l=e||"system",s=a(l);s.subscribe(o=>{t&&localStorage.setItem("theme",o)});export{s as t};

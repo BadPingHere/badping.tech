@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="../_app/immutable/assets/0.9bc0f9f4.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/blog.9d91dcb5.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/hamburgerMenu.3c7cce51.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.ab5be7c9.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/Component.2a0bdbd5.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.929047e9.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.47533b4f.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.ebddf211.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.a4192956.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.0fe306af.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.983b76c7.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/stores.31cf7238.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/4.1d6f65b6.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/blog.module.0142d798.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/hamburgerMenu.f80c2ca4.js"><!-- HEAD_svelte-ry5sow_START --><meta name="color-scheme" content="light dark"><link rel="stylesheet" href="/themes/system.css"><!-- HEAD_svelte-ry5sow_END -->
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">   <div><style data-svelte-h="svelte-1v0ojpr">h1 {
+			font-family: Montserrat, sans-serif;
+			font-weight: 900;
+			text-rendering: optimizeLegibility;
+			font-size: 1.98818rem;
+			line-height: 2.625rem;
+			margin-bottom: 1rem;
+			margin-top: 0;
+		}
+		h1 > a {
+			box-shadow: none;
+			text-decoration: none;
+			color: #fff;
+		}
+		a {
+			box-shadow: 0 1.1px 0 0 currentColor;
+			color: var(--color-blogTextLink);
+			text-decoration: none;
+		}
+		a:hover,
+		a:active {
+			box-shadow: none;
+		}
+		p {
+			margin: 0;
+		}
+
+		body {
+			background-color: var(--color-blogBG);
+			-webkit-font-smoothing: antialiased;
+			font:
+				100%/1.75 'Merriweather',
+				'Georgia',
+				serif;
+			font-weight: normal;
+			font-family: 'Merriweather', 'Georgia', serif;
+			font-kerning: auto;
+			font-feature-settings: normal;
+		}
+		blockquote {
+			border-left: 5px solid #ccc;
+			margin: 1.5em 10px;
+			padding: 0.5em 10px;
+		}
+		img {
+			width: 100%;
+		}</style> <div class="_container_p6h6e_1" tabindex="-1"><div class="_containerInner_p6h6e_4"><input type="checkbox" id="active"> <label for="active" class="menu-btn" data-svelte-h="svelte-151lbde"><i class="fas fa-bars"></i></label> <div class="wrapper" style="font-family: Segoe UI"><select style="position: absolute;top: 0%;left: 48%;"><option value="system" data-svelte-h="svelte-pohfxe">System</option><option value="light" data-svelte-h="svelte-yop7ea">Light</option><option value="dark" data-svelte-h="svelte-6c4gk6">Dark</option></select> <ul><li data-svelte-h="svelte-1kf9tvo"><a style="box-shadow: none;" href="/contact">Contact</a></li> <li data-svelte-h="svelte-1vi1jz8"><a style="box-shadow: none;" href="/projects">Projects</a></li> <li data-svelte-h="svelte-6d6tko"><a style="box-shadow: none;" href="/blog">Blog</a></li> <li data-svelte-h="svelte-1rsn6g5"><a style="box-shadow: none;" href="/">Back to home</a></li></ul></div> <div class="_content_p6h6e_12"><header class="_title_p6h6e_18" data-svelte-h="svelte-1794kap"><h3 class="_articleTitle_p6h6e_50"><a style="box-shadow: none; text-decoration: none;" href="/blog">Blog</a></h3></header> <main><article><header><h1 class="_articleName_p6h6e_58">Trust</h1> <p class="_articleDate_p6h6e_65">July 31, 2023 • 3 min read</p></header> <div id="blogpost"><p data-svelte-h="svelte-tguz1q">Recently, i remember watching a Tom Scott video, I can’t recall the video, but it brought up a question that is something that is hard to think on, but is well documented: How do you trust the internet? How do you trust that there isnt some backdoor that can watch your every move? Well, simple answer, you cant. The long answer is much more complicated.</p> <br><br> <h1 data-svelte-h="svelte-1n9mgh6">Shifting trust</h1> <p data-svelte-h="svelte-155ajvs">To start, lets assume that there is a file, lets say ms_process.exe is backdoor. So, how do you check and confirm? Well you google it and see if other people have encounterd it.</p> <br><br> <p data-svelte-h="svelte-1gv8rvp"><img src="/images/uK8nV4td.png" alt="uK8nV4td.png">
+Okay, what if this is injected html, by some sort of browser manipulation from ms_process.exe? Its okay though, I can just check the SHA256 hashes of my firefox instalation, and make sure its not compromised. But how do I know that my checksum check being displayed to me is correct? That its not being silently changed in the background?</p> <br><br> <p data-svelte-h="svelte-oqyasz">Fuck, well maybe I can create my own checksum, and run it myself, that way I know 100% for-sure that this is safe, and that I can trust the result. Well, of course not. How do I know that what im executing, my python script or my rust program is secretly adding a bit of code that makes it always give my file a checkmark. What if I check the source again? Well, how do I know my text editor isnt compromised? The complier? The enitre coding language?</p> <br><br> <p data-svelte-h="svelte-1nirf92">Okay, different method. Lets use a virus scanner. Let me just pop it into virustotal, and see what it says.</p> <br><br> <p data-svelte-h="svelte-136qq8u"><img src="/images/jYc1xKkg.png" alt="jYc1xKkg.png">
+Well, it says it’s legit, but we fall into the same rabbit hole. How do we trust the webpage, or how do we trust the file uploading? Okay, lets scan it with the Windows Defender tool. Same problem. How do know it isnt scanning a different file, that it isnt compromised? Or better yet, how do we know our operating system is even safe? Can we prove with 100% certainty that there is not already a backdoor in my computer?</p> <br><br> <p data-svelte-h="svelte-1b7zrs8">We cant, so, for extreme trust, we write our own Operating System, we hand build it. How do we get it on the computer? There is no trusted way of file transfer. Checksums can be faked, USB drives can be compromised, airdrop is, well, airdrop, and the process can be attacked before and during transit.</p> <br><br> <p data-svelte-h="svelte-1b08zau">But let’s say, in a perfect world, we get our OS running, with extreme logging and tools already pre-made, by hand, to make sure everything is safe. But how do you know you aren’t backdoored still? How do you know your MSI motherboard isnt rewriting a few files and logs? Or maybe intel is sending your log to the CIA? Even your Samsung SSD could be compromised. And that is the length of the trust in computer science.</p> <br><br> <h1 data-svelte-h="svelte-bcxbiu">Trusting our Trust</h1> <p data-svelte-h="svelte-a7i8gu">So, how do we trust what we see? Well, we unfornately, cant. There is always some way for malware to enter your computer, and some you cant protect against. You can always theory craft a way for malware to hide itself. However, we can pull the trust farther closer to us, allowing less and less places to be compromised. For the average user, you will not be attacked via hardware backdoors or OS backdoors. But, for nation states, these are viable ways to infiltrate. Therefore, many goverments use a wide variety of OS’s depending on the use-case. For example, the US Government uses Windows on many low level machines. However, the highly sensitive computers and backend’s usually run a linux distro, primarily Security-Enhanced Linux (SELinux) made by Red Hat Software.</p> <br><br> <h1 data-svelte-h="svelte-1hoxlhz">Conclusion</h1> <p data-svelte-h="svelte-1cu1mio">So, whats the moral? If you havent figured it out by now, this is not just for technology. Sure, an error code can be wrong, or a virus can be meddling with your browser, but that is far less uncommon than lying and negligence. Trust is something to be earned, not given out to anyone and anything that asks. So, the next time someone says “just trust me”, be a little skeptical.</p></div></article></main> <aside data-svelte-h="svelte-iu13p7"><h3 class="_articleTitle_p6h6e_50"><a style="box-shadow: none; text-decoration: none; font-size: 1.4427rem;" href="/blog">Blog</a></h3></aside></div></div></div></div> 
+			<script type="application/json" data-sveltekit-fetched data-url="/api">{"status":200,"statusText":"","headers":{},"body":"[{\"meta\":{\"title\":\"Trust\",\"date\":\"July 31, 2023\",\"description\":\"Are you sure you can trust your computer?\",\"slug\":\"trust\"},\"readTime\":3},{\"meta\":{\"title\":\"Is AI good for society?\",\"date\":\"June 03, 2023 \",\"description\":\"Spoiler alert: it's not.\",\"slug\":\"is-ai-good-for-society\"},\"readTime\":3}]"}</script>
+			<script>
+				{
+					__sveltekit_t6b7rz = {
+						base: new URL("..", location).pathname.slice(0, -1),
+						env: null
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("../_app/immutable/entry/start.ab5be7c9.js"),
+						import("../_app/immutable/entry/app.ebddf211.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 4],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

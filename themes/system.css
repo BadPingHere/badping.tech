@@ -1,0 +1,51 @@
+@media (prefers-color-scheme: light) {
+	:root {
+		--color-background: #eaeaea;
+		--color-text: #000000;
+		--color-cursor: #000000;
+		--color-menuBtn: #000000;
+		--color-wrapperBG: #ffffff;
+		--color-wrapperLinkHover: #75b5ff;
+		--color-404Link: #77b6ff;
+		--color-404LinkHover: #58a6ff;
+		--color-homepagePython: #f1c400;
+		--color-homepagePHP: #474a8a;
+		--color-homepageJS: #f16529;
+		--link-githubIMG: url('/images/githubBlack.svg');
+		--link-discordIMG: url('/images/discordBlack.svg');
+		--color-contactLink: #77b6ff;
+		--color-contactLinkHover: #58a6ff;
+		--color-blogBG: #d9d9d9;
+		--color-blogText: rgba(46, 46, 46, 0.89);
+		--color-blogTextTitle: #353535;
+		--color-blogTextLink: #3a86ffde;
+		--color-blogTitle: #353535;
+		--link-externalIMG: url('/images/external_link_black.png');
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-background: #070707;
+		--color-text: #ffffff;
+		--color-cursor: #ffffff;
+		--color-menuBtn: #ffffff;
+		--color-wrapperBG: #000000;
+		--color-wrapperLinkHover: #9fccff;
+		--color-404Link: #a9d1ff;
+		--color-404LinkHover: #85beff;
+		--color-homepagePython: #f1c400;
+		--color-homepagePHP: #474a8a;
+		--color-homepageJS: #f16529;
+		--link-githubIMG: url('/images/githubWhite.svg');
+		--link-discordIMG: url('/images/discordWhite.svg');
+		--color-contactLink: #a9d1ff;
+		--color-contactLinkHover: #85beff;
+		--color-blogBG: #282c35;
+		--color-blogText: rgba(255, 255, 255, 0.88);
+		--color-blogTextTitle: #ffffff;
+		--color-blogTextLink: rgba(74, 116, 255, 0.8);
+		--color-blogTitle: #dfdfdf;
+		--link-externalIMG: url('/images/external_link_white.png');
+	}
+}
