@@ -6,7 +6,7 @@
   <br>
 </h1>
 
-<h4 align="center">A sleek and elegent multi-page website built upon <a href="https://react.dev" target="_blank">React</a>.</h4>
+<h4 align="center">A sleek and elegent multi-page website built upon <a href="https://kit.svelte.dev/" target="_blank">SvelteKit</a>.</h4>
 
 <p align="center">
   <a href="#features">Features</a> •
@@ -16,7 +16,7 @@
   <a href="#license">License</a>
 </p>
 
-![screenshot](https://cdn.upload.systems/uploads/xh8YKWKP.gif)
+![gif](/website.gif)
 
 ## Features
 
@@ -44,7 +44,7 @@ $ cd badping.tech
 $ npm install
 
 # Run the app
-$ npm start
+$ vite dev
 ```
 
 > **Note**
@@ -58,7 +58,10 @@ You can [download](https://github.com/BadPingHere/badping.tech/releases/latest) 
 
 This is not my completed project, as there are _always_ feature I want to add. Here are my todo features:
 
-- Themes for Blog
+- More themes
+- Better theme selector
+- Different HighlightJS themes for the codeboxes
+- Eliminate flickering of themes on page load
 
 ## Credits
 

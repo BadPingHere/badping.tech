@@ -1,0 +1,38 @@
+<script>
+	// @ts-nocheck
+	import { page } from '$app/stores';
+	import HamburgerMenu from '$lib/components/hamburgerMenu.svelte';
+	import Typewriter from '$lib/components/typewriter.svelte';
+	import styles from './404.module.css';
+	import './homepage.module.css';
+
+	const name = $page.status + ' ' + $page.error.message;
+</script>
+
+<div>
+	<HamburgerMenu isHome={false} />
+	<div class={styles.container}>
+		<div class={styles.title}>
+			<Typewriter text={name} />
+		</div>
+		<div class={styles.content}>
+			<p>
+				{#if $page.status === 404}
+					The page you are looking for does not exist or has been moved. Would you like to go back
+					to the <a href="/">home page</a>?
+				{:else if $page.status === 500}
+					An unexpected error occurred. Please try again later.
+				{:else if $page.status === 400}
+					Sorry, your request cannot be processed. Please try again later.
+				{:else if $page.status === 403}
+					Access denied! You don't have permission to view this page. Would you like to go back to
+					the <a href="/">home page</a>?
+				{:else}
+					<!-- Default placeholder text or any other message for other statuses -->
+					An unknown error occurred, and we're not sure how. Would you like to go back to the
+					<a href="/">home page</a>?
+				{/if}
+			</p>
+		</div>
+	</div>
+</div>
