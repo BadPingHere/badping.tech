@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://badping.tech/"><img src="https://badping.tech/logo512.png" alt="badping.tech" width="200"></a>
+  <a href="https://badping.tech/"><img src="https://badping.tech/favicon.png" alt="badping.tech" width="200"></a>
   <br>
   badping.tech
   <br>
